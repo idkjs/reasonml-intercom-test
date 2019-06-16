@@ -24,3 +24,5 @@ let track = (event) => intercom("trackEvent", event)
 ```reason
   Intercom.boot({"app_id": Intercom.appId, "created_at": Js.Date.make()});
 ```
+
+4. Ignoring undefined error in `App.bs.js`. Add `.eslintignore` to project root then add `*.bs.js` to it.
