@@ -6,4 +6,5 @@ external intercom : string => 'a => unit = "Intercom";
 
 let boot = (data) => intercom("boot", data);
 
-let track = (event) => intercom("trackEvent", event)
+let track = (event) => intercom("trackEvent", event);
+let update = (event) => intercom("update", event);

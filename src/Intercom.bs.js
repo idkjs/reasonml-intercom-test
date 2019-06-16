@@ -11,9 +11,15 @@ function track($$event) {
   return /* () */0;
 }
 
+function update($$event) {
+  Intercom("update", $$event);
+  return /* () */0;
+}
+
 export {
   boot ,
   track ,
+  update ,
   
 }
 /* No side effect */

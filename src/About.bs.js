@@ -5,18 +5,12 @@ import * as AppModuleCss from "./App.module.css";
 
 var css = AppModuleCss;
 
-var logo = (require('./logo.svg'));
-
-function App(Props) {
+function About(Props) {
   return React.createElement("div", {
               className: css.app
             }, React.createElement("header", {
                   className: css.appHeader
-                }, React.createElement("img", {
-                      className: css.appLogo,
-                      alt: "logo",
-                      src: logo
-                    }), React.createElement("p", undefined, "Edit ", React.createElement("code", undefined, "src/App.re"), " and save to reload."), React.createElement("a", {
+                }, React.createElement("p", undefined, "About Page "), React.createElement("a", {
                       className: css.appLink,
                       href: "https://reasonml.github.io/reason-react",
                       rel: "noopener noreferrer",
@@ -24,11 +18,10 @@ function App(Props) {
                     }, "Learn Reason React")));
 }
 
-var make = App;
+var make = About;
 
 export {
   css ,
-  logo ,
   make ,
   
 }

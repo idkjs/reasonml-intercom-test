@@ -4,8 +4,9 @@
 external register_service_worker: unit => unit = "register";
 [@bs.module "./serviceWorker"]
 external unregister_service_worker: unit => unit = "unregister";
-
-ReactDOMRe.renderToElementWithId(<App />, "root");
+Intercom.boot({"app_id": Intercom.appId, "created_at": Js.Date.make()});
+Intercom.update();
+ReactDOMRe.renderToElementWithId(<Router />, "root");
 
 // If you want your app to work offline and load faster, you can change
 // unregister_service_worker() to register_service_worker() below. Note this
